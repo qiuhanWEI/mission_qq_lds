@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>qqZone</title>
+	<link href="qqZone.css">
+	<link rel="stylesheet" href="qqZone.css">
+	<script src="jquery-1.12.0.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="top_fix">
+		<div class="top_fix_wrap">
+			<a href="#">QQ Zone</a>
+			<div class="user_info">个人中心</div>
+			<div class="user_info mypage" id="mypage_list">我的主页
+				<div class="toggle"></div>
+				<div class="list list_hide" id="mypage_detail">
+					<div class="log">日志</div>
+					<div class="images">相册</div>
+					<div class="words">说说</div>
+				</div>
+			</div>
+			<div class="user_info">我的好友</div>
+			<div class="user_control">
+				<div class="top_search">
+					<input class="search_input" placeholder="好友/动态">
+					<a href="#"></a>
+				</div>
+				<a class="log_in">登录</a>
+				<a class="setting">设置</a>
+			</div>
+		</div>
+	</div>
+	<div class="bcg_container">
+		<div class="layout_head">
+			<div class="zone_name">合合信息</div>
+			<div class="zone_introduction">--韦秋含</div>
+		</div>
+		<img src="flower_square.jpg">
+		<div class="layout_nav">
+			<div class="user_name">韦秋含</div>
+			<div class="user_nav">
+				<div class="user_nav_item">主页</div>
+				<div class="user_nav_item">日志</div>
+				<div class="user_nav_item">相册</div>
+				<div class="user_nav_item">留言板</div>
+				<div class="user_nav_item">说说</div>
+				<div class="user_nav_item">个人档</div>
+				<div class="user_nav_item">音乐</div>
+				<div class="user_nav_item">更多</div>
+			</div>
+		</div>
+		<div class="bcg_body">
+			<div class="bcg_body_left">
+				<div class="menu_list">好友动态</div>
+				<div class="menu_list">特别关心</div>
+				<div class="menu_list">与我相关</div>
+				<div class="menu_list">我的收藏</div>
+			</div>
+			<div class="bcg_body_main">
+				<div class="submit_container">
+					<textarea class="submit_content" placeholder="说点什么吧~"></textarea>
+					<div class="submit_side">
+						<div class="submit_side_camera"></div>
+						<div class="submit_side_link"></div>
+						<div class="submit_side_ok"></div>
+					</div>
+				</div>
+				<div class="body_wrapper">
+					<div class="body_control">
+						<div class="body_control_tab">全部动态</div>
+						<div class="body_control_refesh">
+							<a title="刷新">刷新</a>
+							<a title="设置">设置</a>
+						</div>
+					</div>
+					<div class="user_message">
+						<div class="user_head">
+							<img src="thumb-vatican.jpg">
+							<div class="user_message_info">
+								<div class="user_portrait">wyc</div>
+								<div class="user_time">12:21</div>
+							</div>
+						</div>
+						<div class="user_content">
+							<div class="user_text">panda</div>
+							<img src="panda.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bcg_body_right">
+				<div class="visitor_head">
+					<p class="people_visited">谁看过我</p>
+					<p class="people_visited">|</p>
+					<p class="i_visit">我看过谁</p>
+				</div>
+				<div class="visit_wrapper">
+					<div class="visit_detail">
+						<img src="thumb-soldier.jpg">
+						<div class="visit_info">
+							<div class="visit_name">wyc</div>
+							<div class="visit_time">2017.06.18</div>
+						</div>
+					</div>
+					<div class="visit_detail">
+						<img src="thumb-arch.jpg">
+						<div class="visit_info">
+							<div class="visit_name">wpp</div>
+							<div class="visit_time">2017.06.17</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+	var $mypage_list = $('#mypage_list'),
+		$mypage_detail = $('#mypage_detail');
+	$mypage_list.bind("click", function () {
+		$mypage_detail.toggleClass('list_hide');
+	})
+</script>
+</body>
+</html>
